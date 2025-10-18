@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariushi Pumps Trading LLC - Leading Pump Solutions in UAE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .hero-gradient { 
+            background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 50%, #0369a1 100%);
+        }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.15); }
+        .nav-link { position: relative; transition: color 0.3s; }
+        .nav-link::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: #0ea5e9; transition: width 0.3s; }
+        .nav-link:hover::after { width: 100%; }
+        .nav-link.active { color: #0ea5e9; font-weight: 600; }
+        .nav-link.active::after { width: 100%; }
+        .mobile-menu { transform: translateX(100%); transition: transform 0.3s ease; }
+        .mobile-menu.active { transform: translateX(0); }
+
+        /* Carousel Styles */
+        .carousel-slide { transition: opacity 1.5s ease-in-out; }
+        .carousel-slide.active { opacity: 1 !important; }
+
+        .hero-full { min-height: 100vh; display: flex; align-items: center; }
+
+        .gradient-overlay {
+            background: #213d87;
+            animation: gradientShift 8s ease infinite;
+        }
+
+        @keyframes gradientShift { 0%, 100% { opacity: 0.85; } 50% { opacity: 0.9; } }
+
+        @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+        .pulse-animate { animation: pulse 2s ease-in-out infinite; }
+
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: translateY(0); } }
+        .animate-fade-in-up { animation: fadeInUp 1s ease forwards; }
+        .delay-1 { animation-delay: 0.2s; opacity: 0; }
+        .delay-2 { animation-delay: 0.4s; opacity: 0; }
+        .delay-3 { animation-delay: 0.6s; opacity: 0; }
+
+        .stat-card { backdrop-filter: blur(10px); background: rgba(255, 255, 255, 0.15); border: 1px solid rgba(255, 255, 255, 0.3); }
+
+
+      
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .animate-fadeIn {
+        animation: fadeIn 0.8s ease-out forwards;
+      }
+      .delay-100 { animation-delay: 0.1s; }
+      .delay-200 { animation-delay: 0.2s; }
+      .delay-300 { animation-delay: 0.3s; }
+      .delay-400 { animation-delay: 0.4s; }
+      .delay-500 { animation-delay: 0.5s; }
+      .delay-600 { animation-delay: 0.6s; }
+      .delay-700 { animation-delay: 0.7s; }
+      .delay-800 { animation-delay: 0.8s; }
+      .delay-900 { animation-delay: 0.9s; }
+      .delay-1000 { animation-delay: 1s; }
+   
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header -->
+   
+    <header class="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-sm shadow-md">
+      <div class="container mx-auto px-4 lg:px-8">
+        <div class="flex items-center justify-between py-4">
+    
+          <!-- Left: Logo + Text -->
+          <div class="flex items-center space-x-3">
+            <img src="https://mariushipumps.com/assets/img/mariushi-pumps_logo.png" alt="Mariushi Pumps" class="h-16 w-auto">
+    
+            <!-- Tagline -->
+            <div class="flex flex-col leading-tight">
+              <p class="font-bold text-gray-800 text-sm sm:text-base lg:text-lg">Mariushi Pumps</p>
+              <p class="text-gray-600 text-xs sm:text-sm lg:text-base">
+                Your single source for Pump repairs &amp; 
+              </p>
+              <p class="text-[#213d87] text-xs sm:text-sm lg:text-base font-medium">
+                Engineering requirement
+              </p>
+            </div>
+          </div>
+    
+          <!-- Desktop Nav (Centered) -->
+          <nav class="hidden lg:flex absolute left-1/2 transform -translate-x-1/2 space-x-8">
+            <a href="#home" class="nav-link relative text-gray-700 hover:text-[#213d87] font-medium transition">Home</a>
+            <a href="#about" class="nav-link relative text-gray-700 hover:text-[#213d87] font-medium transition">About</a>
+            <a href="#services" class="nav-link relative text-gray-700 hover:text-[#213d87] font-medium transition">Services</a>
+            <a href="#sectors" class="nav-link relative text-gray-700 hover:text-[#213d87] font-medium transition">Sectors</a>
+            <a href="#clients" class="nav-link relative text-gray-700 hover:text-[#213d87] font-medium transition">Clients</a>
+            <a href="#brands-served" class="nav-link relative text-gray-700 hover:text-[#213d87] font-medium transition">Brands</a>
+            <a href="#contact" class="nav-link relative text-gray-700 hover:text-[#213d87] font-medium transition">Contact</a>
+
+          </nav>
+    
+          <!-- Right: Contact + Quote -->
+          <div class="hidden lg:flex items-center space-x-4">
+            <div class="text-right text-sm">
+              <p class="text-gray-600">📞 +971 50 6564875</p>
+              <p class="text-gray-600">✉️ info@mariushipumps.com</p>
+            </div>
+            <a href="#contact" class="bg-[#213d87] text-white px-6 py-2.5 rounded-lg hover:bg-[#b64349] transition font-medium shadow-lg">
+              Get Quote
+            </a>
+          </div>
+    
+          <!-- Mobile Button -->
+          <button id="mobileMenuBtn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    
+      <!-- Mobile Menu -->
+      <div id="mobileMenu" class="mobile-menu fixed top-0 right-0 w-full h-screen bg-white lg:hidden z-50 overflow-y-auto hidden">
+        <!-- Top section with logo + tagline + close button -->
+        <div class="flex justify-between items-center p-6 border-b">
+          <div class="flex items-center space-x-3">
+            <img src="https://mariushipumps.com/assets/img/mariushi-pumps_logo.png" alt="Mariushi Pumps" class="h-10 w-auto">
+            <div class="flex flex-col leading-tight">
+              <p class="font-semibold text-gray-800 text-sm sm:text-base">Mariushi Pumps</p>
+              <p class="text-gray-600 text-xs sm:text-sm leading-tight">
+                Your single source for Pump repairs &
+              </p>
+              <p class="text-[#213d87] text-xs sm:text-sm font-medium leading-tight">
+                Engineering requirement
+              </p>
+            </div>
+          </div>
+          <button id="closeMobileMenu" class="p-2 hover:bg-gray-100 rounded-lg">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+      
+        <!-- Navigation Links -->
+        <nav class="p-6 space-y-4">
+          <a href="#home" class="block py-3 text-gray-700 hover:text-[#213d87] font-medium border-b">Home</a>
+          <a href="#about" class="block py-3 text-gray-700 hover:text-[#213d87] font-medium border-b">About</a>
+          <a href="#services" class="block py-3 text-gray-700 hover:text-[#213d87] font-medium border-b">Services</a>
+          <a href="#sectors" class="block py-3 text-gray-700 hover:text-[#213d87] font-medium border-b">Sectors</a>
+          <a href="#contact" class="block py-3 text-gray-700 hover:text-[#213d87] font-medium border-b">Contact</a>
+      
+          <div class="pt-4 space-y-2">
+            <p class="text-sm text-gray-600">📞 +971 50 6564875</p>
+            <p class="text-sm text-gray-600">✉️ info@mariushipumps.com</p>
+          </div>
+          <a href="#contact" class="block w-full bg-[#213d87] text-white text-center px-6 py-3 rounded-lg hover:bg-[#b64349] transition font-medium">
+            Get Quote
+          </a>
+        </nav>
+      </div>
+      
+    
+      <!-- Nav Highlight CSS -->
+      <style>
+        .nav-link::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -4px;
+          width: 0%;
+          height: 2px;
+          background-color: #b64349;
+          transition: width 0.3s ease-in-out;
+        }
+    
+        .nav-link:hover::after,
+        .nav-link.active::after {
+          width: 100%;
+        }
+    
+        .nav-link.active {
+          color: #213d87;
+          font-weight: 600;
+        }
+      </style>
+    </header>
+    
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-full relative overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="carousel-wrapper relative w-full h-full">
+                <div class="carousel-slide active absolute inset-0 w-full h-full" style="background-image: url('https://mariushipumps.com/assets/img/slide/slide-1.jpg'); background-size: cover; background-position: center;"></div>
+                <div class="carousel-slide absolute inset-0 w-full h-full opacity-0" style="background-image: url('https://mariushipumps.com/assets/img/slide/slide-2.jpg'); background-size: cover; background-position: center;"></div>
+                <div class="carousel-slide absolute inset-0 w-full h-full opacity-0" style="background-image: url('https://mariushipumps.com/assets/img/slide/slide-3.jpg'); background-size: cover; background-position: center;"></div>
+            </div>
+            <div class="gradient-overlay absolute inset-0"></div>
+        </div>
+
+        <div class="container mx-auto px-4 lg:px-8 relative z-10 mt-40 sm:mt-28 lg:mt-20">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl sm:text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight animate-fade-in-up">
+                    Professional Pump Solutions 
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-orange-400">Across UAE</span>
+                </h1>
+                <p class="text-lg sm:text-xl lg:text-2xl text-white/95 mb-8 leading-relaxed animate-fade-in-up delay-1">
+                    Specialized in design, supply, installation, servicing & repair of all types of pumping equipment with 
+                    <span class="font-bold text-yellow-300">25 years</span> of expertise.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 mb-12 animate-fade-in-up delay-2 justify-center">
+                    <a href="#services" class="bg-white text-sky-600 px-8 py-4 rounded-lg font-semibold hover:bg-sky-50 transition text-center shadow-xl hover:shadow-2xl transform hover:-translate-y-1">
+                        Explore Services
+                    </a>
+                    <a href="#contact" class="border-2 border-white bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-sky-600 transition text-center pulse-animate">
+                        Contact Us →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- About Section -->
+<section id="about" class="relative py-24 bg-gradient-to-br from-blue-50 via-white to-blue-100 overflow-hidden">
+
+  <div class="text-center mb-16">
+    <div class="inline-block relative">
+      <h2 class="text-4xl font-extrabold mb-3 text-[#213d87]">
+        ABOUT US
+      </h2>
+  
+      <!-- Curved Stylish Underline -->
+      <svg class="absolute left-1/2 -translate-x-1/2 bottom-[-8px] w-36 sm:w-44 md:w-56"
+           viewBox="0 0 200 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 15 C60 5, 140 5, 195 15"
+              stroke="#b64349"
+              stroke-width="5"
+              stroke-linecap="round"
+              />
+      </svg>
+    </div>
+  </div>
+  
+  
+
+  <div class="container mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-16 items-center">
+  
+    <!-- LEFT: Image Carousel -->
+    <div class="relative w-full h-[480px] rounded-2xl overflow-hidden shadow-2xl">
+      <h3 class="absolute top-4 left-6 z-20 text-xl font-semibold text-white bg-blue-800/70 px-4 py-1 rounded-lg backdrop-blur-sm">
+        Our Craft
+      </h3>
+
+      <div class="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-blue-800/10"></div>
+
+      <div class="relative w-full h-full">
+        <img src="https://mariushipumps.com/assets/img/about-Mariushi-Pumps.jpg" alt="Pump system"
+          class="absolute w-full h-full object-cover rounded-2xl opacity-0 animate-fade1">
+        <img src="https://mariushipumps.com/assets/img/about-Mariushi-Pumps.jpg" alt="Pump service"
+          class="absolute w-full h-full object-cover rounded-2xl opacity-0 animate-fade2">
+        <img src="https://mariushipumps.com/assets/img/about-Mariushi-Pumps.jpg" alt="Maintenance"
+          class="absolute w-full h-full object-cover rounded-2xl opacity-0 animate-fade3">
+      </div>
+    </div>
+  
+    <!-- RIGHT: Text Content -->
+    <div class="relative text-left">
+      <h3 class="text-blue-600 font-semibold tracking-widest uppercase mb-2">Who We Are</h3>
+      <h2 class="text-4xl lg:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
+        Powering Precision in Pump Technology
+      </h2>
+  
+      <p class="text-lg text-gray-700 leading-relaxed mb-4">
+        <span class="font-semibold text-blue-700">Mariushi Pumps</span> is a trusted name in the design, installation, and servicing of advanced pumping systems across the UAE — engineered to deliver maximum efficiency, reliability, and longevity.
+      </p>
+  
+      <!-- Read More / Read Less (Pure CSS) -->
+      <input type="checkbox" id="readmore" class="peer hidden">
+      <p class="text-gray-700 leading-relaxed transition-all duration-500 ease-in-out max-h-28 overflow-hidden peer-checked:max-h-[600px]">
+        With decades of expertise, we combine technology with craftsmanship — ensuring each pump system operates flawlessly under demanding conditions.  
+        From diagnostics and preventive maintenance to complete overhauls, our solutions are built to sustain performance and reduce downtime.  
+        We serve industries ranging from oil & gas to water treatment, providing tailored systems that meet the highest international standards.  
+        <br><br>
+        Our philosophy is simple: <span class="font-medium text-blue-700">efficiency through innovation</span>.  
+        Every project we undertake reflects our commitment to quality, sustainability, and customer trust.
+      </p>
+  
+      <label for="readmore" class="mt-4 inline-block cursor-pointer text-blue-700 font-semibold hover:text-blue-900 transition duration-300">
+        <span class="peer-checked:hidden">Read More ↓</span>
+        <span class="hidden peer-checked:inline">Read Less ↑</span>
+      </label>
+    </div>
+  </div>
+  
+  <!-- Pure CSS Animation for Slideshow -->
+  <style>
+    @keyframes fade {
+      0%, 33%, 100% { opacity: 0; }
+      5%, 28% { opacity: 1; }
+    }
+    .animate-fade1 { animation: fade 12s infinite 0s; }
+    .animate-fade2 { animation: fade 12s infinite 4s; }
+    .animate-fade3 { animation: fade 12s infinite 8s; }
+  </style>
+</section>
+
+
+  
+      
+    <!-- Services Section -->
+    <section id="services" class="py-12 bg-gradient-to-br from-blue-50 via-white to-blue-100">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+    
+        <!-- Title -->
+        <div class="text-center mb-12">
+          <div class="inline-block relative">
+            <h2 class="text-4xl font-extrabold mb-3 text-[#213d87]">
+              SERVICES
+            </h2>
+        
+            <!-- Curved Stylish Underline -->
+            <svg class="absolute left-1/2 -translate-x-1/2 bottom-[-8px] w-36 sm:w-44 md:w-56"
+                 viewBox="0 0 200 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 15 C60 5, 140 5, 195 15"
+                    stroke="#b64349"
+                    stroke-width="5"
+                    stroke-linecap="round" />
+            </svg>
+          </div>
+        </div>
+        
+      
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="p-6 bg-white rounded-2xl shadow-lg border-t-4 border-blue-500 hover:scale-105 transition">
+              <div class="text-5xl mb-4 text-blue-600">🛠️</div>
+              <h3 class="text-xl font-bold text-gray-800 mb-2">Pump Repairs (Onsite & Inhouse)</h3>
+              <p class="text-gray-600 text-sm">Professional repairs ensuring optimal pump performance and reliability.</p>
+            </div>
+      
+            <!-- Card 2 -->
+            <div class="p-6 bg-white rounded-2xl shadow-lg border-t-4 border-green-500 hover:scale-105 transition">
+              <div class="text-5xl mb-4 text-green-600">🧰</div>
+              <h3 class="text-xl font-bold text-gray-800 mb-2">Preventative Maintenance</h3>
+              <p class="text-gray-600 text-sm">Scheduled maintenance to prevent costly breakdowns and extend lifespan.</p>
+            </div>
+      
+            <!-- Card 3 -->
+            <div class="p-6 bg-white rounded-2xl shadow-lg border-t-4 border-yellow-500 hover:scale-105 transition">
+              <div class="text-5xl mb-4 text-yellow-500">⚙️</div>
+              <h3 class="text-xl font-bold text-gray-800 mb-2">Pump Station Upgrades</h3>
+              <p class="text-gray-600 text-sm">Enhance efficiency and modernize your existing pump stations.</p>
+            </div>
+      
+            <!-- Card 4 -->
+            <div class="p-6 bg-white rounded-2xl shadow-lg border-t-4 border-purple-500 hover:scale-105 transition">
+              <div class="text-5xl mb-4 text-purple-600">💧</div>
+              <h3 class="text-xl font-bold text-gray-800 mb-2">Wastewater Plant Service & Repairs</h3>
+              <p class="text-gray-600 text-sm">Reliable servicing for wastewater treatment plant assets and systems.</p>
+            </div>
+      
+            <!-- Card 5 -->
+            <div class="p-6 bg-white rounded-2xl shadow-lg border-t-4 border-pink-500 hover:scale-105 transition">
+              <div class="text-5xl mb-4 text-pink-500">🚰</div>
+              <h3 class="text-xl font-bold text-gray-800 mb-2">Water Treatment Plant Services</h3>
+              <p class="text-gray-600 text-sm">Comprehensive support for water treatment plant assets and repairs.</p>
+            </div>
+      
+            <!-- Card 6 -->
+            <div class="p-6 bg-white rounded-2xl shadow-lg border-t-4 border-red-500 hover:scale-105 transition">
+              <div class="text-5xl mb-4 text-red-600">🔩</div>
+              <h3 class="text-xl font-bold text-gray-800 mb-2">New Pump Installation</h3>
+              <p class="text-gray-600 text-sm">Supply and install high-performance pumps and associated equipment.</p>
+            </div>
+      
+            <!-- Card 7 -->
+            <div class="p-6 bg-white rounded-2xl shadow-lg border-t-4 border-teal-500 hover:scale-105 transition">
+              <div class="text-5xl mb-4 text-teal-600">📋</div>
+              <h3 class="text-xl font-bold text-gray-800 mb-2">Condition Reports</h3>
+              <p class="text-gray-600 text-sm">Detailed reports on pump condition to assist in predictive maintenance.</p>
+            </div>
+      
+            <!-- Card 8 -->
+            <div class="p-6 bg-white rounded-2xl shadow-lg border-t-4 border-indigo-500 hover:scale-105 transition">
+              <div class="text-5xl mb-4 text-indigo-600">🧭</div>
+              <h3 class="text-xl font-bold text-gray-800 mb-2">Condition Monitoring</h3>
+              <p class="text-gray-600 text-sm">Advanced monitoring to detect issues before they cause downtime.</p>
+            </div>
+      
+            <!-- Card 9 -->
+            <div class="p-6 bg-white rounded-2xl shadow-lg border-t-4 border-orange-500 hover:scale-105 transition">
+              <div class="text-5xl mb-4 text-orange-600">🔧</div>
+              <h3 class="text-xl font-bold text-gray-800 mb-2">Breakdown Maintenance/Repairs</h3>
+              <p class="text-gray-600 text-sm">Rapid repair services to minimize disruptions during equipment failure.</p>
+            </div>
+      
+            <!-- Card 10 -->
+            <div class="p-6 bg-white rounded-2xl shadow-lg border-t-4 border-cyan-500 hover:scale-105 transition">
+              <div class="text-5xl mb-4 text-cyan-600">🎯</div>
+              <h3 class="text-xl font-bold text-gray-800 mb-2">Laser Alignments</h3>
+              <p class="text-gray-600 text-sm">Precision laser alignment for maximum efficiency and reduced wear.</p>
+            </div>
+      
+            <!-- Card 11 -->
+            <div class="p-6 bg-white rounded-2xl shadow-lg border-t-4 border-lime-500 hover:scale-105 transition">
+              <div class="text-5xl mb-4 text-lime-600">⚡</div>
+              <h3 class="text-xl font-bold text-gray-800 mb-2">Pump Energy Audits</h3>
+              <p class="text-gray-600 text-sm">Assess and improve energy efficiency to lower operational costs.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+<!-- Sectors Section -->
+<section id="sectors" class="relative py-24 bg-gradient-to-br from-white via-blue-50/40 to-blue-100/20">
+  <div class="container mx-auto px-6 lg:px-12" data-aos="fade-up">
+
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <div class="inline-block relative">
+        <h2 class="text-4xl font-extrabold mb-3 text-[#213d87]">
+          INDUSTRY SECTORS
+        </h2>
+    
+        <!-- Extended Curved Stylish Underline -->
+        <svg class="absolute left-1/2 -translate-x-1/2 bottom-[-10px] w-52 sm:w-64 md:w-80"
+             viewBox="0 0 250 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 15 C80 5, 170 5, 245 15"
+                stroke="#b64349"
+                stroke-width="5"
+                stroke-linecap="round" />
+        </svg>
+      </div>
+    
+      <p class="text-lg text-gray-600 mt-4">
+        The sectors we are specialized in:
+      </p>
+    </div>
+    
+    
+
+    <!-- Sector Cards Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+      <!-- Card -->
+      <div class="rounded-2xl overflow-hidden shadow-xl transform hover:-translate-y-2 transition-all duration-500 bg-gradient-to-b from-yellow-50 to-yellow-100 border-b-4 border-yellow-400">
+        <img src="https://mariushipumps.com/assets/img/services-sector/oil-gas.jpg" alt="Oil & Gas" class="w-full h-56 object-cover">
+        <div class="p-6 text-center">
+          <h3 class="text-xl font-bold text-[#213d87] tracking-wide">OIL & GAS</h3>
+        </div>
+      </div>
+
+      <!-- Card -->
+      <div class="rounded-2xl overflow-hidden shadow-xl transform hover:-translate-y-2 transition-all duration-500 bg-gradient-to-b from-pink-50 to-pink-100 border-b-4 border-pink-400">
+        <img src="https://mariushipumps.com/assets/img/services-sector/petrochemicals.jpg" alt="Petrochemicals" class="w-full h-56 object-cover">
+        <div class="p-6 text-center">
+          <h3 class="text-xl font-bold text-[#213d87] tracking-wide">PETROCHEMICALS</h3>
+        </div>
+      </div>
+
+      <!-- Card -->
+      <div class="rounded-2xl overflow-hidden shadow-xl transform hover:-translate-y-2 transition-all duration-500 bg-gradient-to-b from-blue-50 to-blue-100 border-b-4 border-blue-400">
+        <img src="https://mariushipumps.com/assets/img/services-sector/power.jpg" alt="Power" class="w-full h-56 object-cover">
+        <div class="p-6 text-center">
+          <h3 class="text-xl font-bold text-[#213d87] tracking-wide">POWER</h3>
+        </div>
+      </div>
+
+      <!-- Card -->
+      <div class="rounded-2xl overflow-hidden shadow-xl transform hover:-translate-y-2 transition-all duration-500 bg-gradient-to-b from-emerald-50 to-emerald-100 border-b-4 border-emerald-400">
+        <img src="https://mariushipumps.com/assets/img/services-sector/industrial.jpg" alt="Industrial" class="w-full h-56 object-cover">
+        <div class="p-6 text-center">
+          <h3 class="text-xl font-bold text-[#213d87] tracking-wide">INDUSTRIAL</h3>
+        </div>
+      </div>
+
+      <!-- Card -->
+      <div class="rounded-2xl overflow-hidden shadow-xl transform hover:-translate-y-2 transition-all duration-500 bg-gradient-to-b from-purple-50 to-purple-100 border-b-4 border-purple-400">
+        <img src="https://mariushipumps.com/assets/img/services-sector/leisure.jpg" alt="Leisure" class="w-full h-56 object-cover">
+        <div class="p-6 text-center">
+          <h3 class="text-xl font-bold text-[#213d87] tracking-wide">LEISURE</h3>
+        </div>
+      </div>
+
+      <!-- Card -->
+      <div class="rounded-2xl overflow-hidden shadow-xl transform hover:-translate-y-2 transition-all duration-500 bg-gradient-to-b from-red-50 to-red-100 border-b-4 border-red-400">
+        <img src="https://mariushipumps.com/assets/img/services-sector/hotels-hospitality.jpg" alt="Hotel & Hospitality" class="w-full h-56 object-cover">
+        <div class="p-6 text-center">
+          <h3 class="text-xl font-bold text-[#213d87] tracking-wide">HOTEL & HOSPITALITY</h3>
+        </div>
+      </div>
+
+      <!-- Card -->
+      <div class="rounded-2xl overflow-hidden shadow-xl transform hover:-translate-y-2 transition-all duration-500 bg-gradient-to-b from-cyan-50 to-cyan-100 border-b-4 border-cyan-400">
+        <img src="https://mariushipumps.com/assets/img/services-sector/marine.jpg" alt="Marine" class="w-full h-56 object-cover">
+        <div class="p-6 text-center">
+          <h3 class="text-xl font-bold text-[#213d87] tracking-wide">MARINE</h3>
+        </div>
+      </div>
+
+      <!-- Card -->
+      <div class="rounded-2xl overflow-hidden shadow-xl transform hover:-translate-y-2 transition-all duration-500 bg-gradient-to-b from-green-50 to-green-100 border-b-4 border-green-400">
+        <img src="https://mariushipumps.com/assets/img/services-sector/environmental.jpg" alt="Environmental" class="w-full h-56 object-cover">
+        <div class="p-6 text-center">
+          <h3 class="text-xl font-bold text-[#213d87] tracking-wide">ENVIRONMENTAL</h3>
+        </div>
+      </div>
+
+      <!-- Card -->
+      <div class="rounded-2xl overflow-hidden shadow-xl transform hover:-translate-y-2 transition-all duration-500 bg-gradient-to-b from-orange-50 to-orange-100 border-b-4 border-orange-400">
+        <img src="https://mariushipumps.com/assets/img/services-sector/education.jpg" alt="Education" class="w-full h-56 object-cover">
+        <div class="p-6 text-center">
+          <h3 class="text-xl font-bold text-[#213d87] tracking-wide">EDUCATION</h3>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  
+<!-- CTA Section -->
+<section class="relative py-24 bg-[#213d87] text-center">
+  <div class="container mx-auto px-6 lg:px-12">
+
+    <!-- Soft Glow Accent -->
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.12)_0%,rgba(0,0,0,0)_75%)] pointer-events-none"></div>
+
+    <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-6 tracking-tight">
+      Need Emergency Pump Service?
+    </h2>
+
+    <p class="text-lg md:text-xl text-blue-100 mb-10 max-w-2xl mx-auto leading-relaxed">
+      Our expert team is available <span class="font-semibold text-white">24/7</span> for emergency repairs and maintenance.<br>
+      We respond quickly to minimize your system downtime.
+    </p>
+
+    <a href="tel:+971506564875"
+      class="inline-block bg-white text-[#213d87] font-bold text-lg px-10 py-4 rounded-xl shadow-lg hover:bg-blue-50 hover:scale-105 transition-transform duration-300 ease-in-out">
+      📞 Call Now: +971 50 6564875
+    </a>
+  </div>
+</section>
+<!-- Clients Section -->
+<!-- Clients Section -->
+<section id="clients" class="py-24 bg-gradient-to-br from-white via-gray-50 to-blue-50/30 overflow-hidden">
+  <div class="container mx-auto px-6 lg:px-12 text-center" data-aos="fade-up">
+
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <div class="inline-block relative">
+        <h2 class="text-4xl font-extrabold mb-3 text-[#213d87]">OUR ESTEEMED CLIENTS</h2>
+        <svg class="absolute left-1/2 -translate-x-1/2 bottom-[-10px] w-52 sm:w-64 md:w-80"
+             viewBox="0 0 250 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 15 C80 5, 170 5, 245 15"
+                stroke="#b64349" stroke-width="5" stroke-linecap="round" />
+        </svg>
+      </div>
+      <p class="text-lg text-gray-600 mt-4">
+        Trusted by leading brands across industries:
+      </p>
+    </div>
+
+    <!-- 3 Rows -->
+    <div class="space-y-12">
+
+      <!-- Row 1 (L→R) -->
+      <div class="overflow-hidden">
+        <div class="scroll-row animate-scroll-left flex gap-12">
+          <img src="images/client1.png" class="client-logo" alt="">
+          <img src="images/client2.png" class="client-logo" alt="">
+          <img src="images/client3.png" class="client-logo" alt="">
+          <img src="images/client4.png" class="client-logo" alt="">
+          <img src="images/client5.png" class="client-logo" alt="">
+          <img src="images/client6.png" class="client-logo" alt="">
+          <img src="images/client7.png" class="client-logo" alt="">
+          <!-- duplicate for seamless scroll -->
+          <img src="images/client1.png" class="client-logo" alt="">
+          <img src="images/client2.png" class="client-logo" alt="">
+          <img src="images/client3.png" class="client-logo" alt="">
+          <img src="images/client4.png" class="client-logo" alt="">
+          <img src="images/client5.png" class="client-logo" alt="">
+          <img src="images/client6.png" class="client-logo" alt="">
+          <img src="images/client7.png" class="client-logo" alt="">
+        </div>
+      </div>
+
+      <!-- Row 2 (R→L) -->
+      <div class="overflow-hidden">
+        <div class="scroll-row animate-scroll-right flex gap-12">
+          <img src="images/client8.png" class="client-logo" alt="">
+          <img src="images/client9.png" class="client-logo" alt="">
+          <img src="images/client10.png" class="client-logo" alt="">
+          <img src="images/client11.png" class="client-logo" alt="">
+          <img src="images/client12.png" class="client-logo" alt="">
+          <img src="images/client13.png" class="client-logo" alt="">
+          <img src="images/client14.png" class="client-logo" alt="">
+          <!-- duplicate for seamless scroll -->
+          <img src="images/client8.png" class="client-logo" alt="">
+          <img src="images/client9.png" class="client-logo" alt="">
+          <img src="images/client10.png" class="client-logo" alt="">
+          <img src="images/client11.png" class="client-logo" alt="">
+          <img src="images/client12.png" class="client-logo" alt="">
+          <img src="images/client13.png" class="client-logo" alt="">
+          <img src="images/client14.png" class="client-logo" alt="">
+        </div>
+      </div>
+
+      <!-- Row 3 (L→R) -->
+      <div class="overflow-hidden">
+        <div class="scroll-row animate-scroll-left flex gap-12">
+          <img src="images/client15.png" class="client-logo" alt="">
+          <img src="images/client16.png" class="client-logo" alt="">
+          <img src="images/client17.png" class="client-logo" alt="">
+          <!-- duplicate for seamless scroll -->
+          <img src="images/client15.png" class="client-logo" alt="">
+          <img src="images/client16.png" class="client-logo" alt="">
+          <img src="images/client17.png" class="client-logo" alt="">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+.client-logo {
+  height: 3rem;
+  display: inline-block;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+.client-logo:hover {
+  opacity: 1;
+}
+
+/* Keyframes for infinite seamless motion */
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+@keyframes scroll-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+.scroll-row {
+  display: inline-flex;
+  min-width: max-content;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.animate-scroll-left {
+  animation-name: scroll-left;
+  animation-duration: 10s;
+}
+.animate-scroll-right {
+  animation-name: scroll-right;
+  animation-duration: 10s;
+}
+
+/* Pause on hover */
+.scroll-row:hover {
+  animation-play-state: paused;
+}
+</style>
+
+  
+<!-- Brands Served Section -->
+<section id="brands-served" class="py-24 bg-gradient-to-br from-white via-blue-50/20 to-blue-100/20 overflow-hidden">
+  <div class="container mx-auto px-6 lg:px-12 text-center" data-aos="fade-up">
+
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <div class="inline-block relative">
+        <h2 class="text-4xl font-extrabold mb-3 text-[#213d87]">BRANDS SERVED</h2>
+        <svg class="absolute left-1/2 -translate-x-1/2 bottom-[-10px] w-52 sm:w-64 md:w-80"
+             viewBox="0 0 250 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 15 C80 5, 170 5, 245 15"
+                stroke="#b64349" stroke-width="5" stroke-linecap="round" />
+        </svg>
+      </div>
+      <p class="text-lg text-gray-600 mt-4">
+        We proudly serve these distinguished brands:
+      </p>
+    </div>
+
+    <!-- 3 Rows of Brands -->
+    <div class="space-y-12">
+
+      <!-- Row 1 (L→R, 6 logos) -->
+      <div class="overflow-hidden">
+        <div class="scroll-row animate-scroll-left flex gap-12">
+          <img src="images/brands1.png" class="client-logo" alt="">
+          <img src="images/brands2.png" class="client-logo" alt="">
+          <img src="images/brands3.png" class="client-logo" alt="">
+          <img src="images/brands4.png" class="client-logo" alt="">
+          <img src="images/brands5.png" class="client-logo" alt="">
+          <img src="images/brands6.png" class="client-logo" alt="">
+          <!-- duplicate for seamless scroll -->
+          <img src="images/brands1.png" class="client-logo" alt="">
+          <img src="images/brands2.png" class="client-logo" alt="">
+          <img src="images/brands3.png" class="client-logo" alt="">
+          <img src="images/brands4.png" class="client-logo" alt="">
+          <img src="images/brands5.png" class="client-logo" alt="">
+          <img src="images/brands6.png" class="client-logo" alt="">
+        </div>
+      </div>
+
+      <!-- Row 2 (R→L, 6 logos) -->
+      <div class="overflow-hidden">
+        <div class="scroll-row animate-scroll-right flex gap-12">
+          <img src="images/brands7.png" class="client-logo" alt="">
+          <img src="images/brands8.png" class="client-logo" alt="">
+          <img src="images/brands9.png" class="client-logo" alt="">
+          <img src="images/brands10.png" class="client-logo" alt="">
+          <img src="images/brands11.png" class="client-logo" alt="">
+          <img src="images/brands12.png" class="client-logo" alt="">
+          <!-- duplicate for seamless scroll -->
+          <img src="images/brands7.png" class="client-logo" alt="">
+          <img src="images/brands8.png" class="client-logo" alt="">
+          <img src="images/brands9.png" class="client-logo" alt="">
+          <img src="images/brands10.png" class="client-logo" alt="">
+          <img src="images/brands11.png" class="client-logo" alt="">
+          <img src="images/brands12.png" class="client-logo" alt="">
+        </div>
+      </div>
+
+      <!-- Row 3 (L→R, 5 logos) -->
+      <div class="overflow-hidden">
+        <div class="scroll-row animate-scroll-left flex gap-12">
+          <img src="images/brands13.png" class="client-logo" alt="">
+          <img src="images/brands14.png" class="client-logo" alt="">
+          <img src="images/brands15.png" class="client-logo" alt="">
+          <img src="images/brands16.png" class="client-logo" alt="">
+          <img src="images/brands17.png" class="client-logo" alt="">
+          <!-- duplicate for seamless scroll -->
+          <img src="images/brands13.png" class="client-logo" alt="">
+          <img src="images/brands14.png" class="client-logo" alt="">
+          <img src="images/brands15.png" class="client-logo" alt="">
+          <img src="images/brands16.png" class="client-logo" alt="">
+          <img src="images/brands17.png" class="client-logo" alt="">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+.client-logo {
+  height: 3rem;
+  display: inline-block;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+.client-logo:hover {
+  opacity: 1;
+}
+
+/* Keyframes for infinite seamless motion */
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+@keyframes scroll-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+.scroll-row {
+  display: inline-flex;
+  min-width: max-content;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+/* Different speeds for elegance */
+.animate-scroll-left { animation-name: scroll-left; animation-duration: 20s; }
+.animate-scroll-right { animation-name: scroll-right; animation-duration: 25s; }
+
+/* Pause on hover */
+.scroll-row:hover {
+  animation-play-state: paused;
+}
+</style>
+
+
+
+<!-- testimonials -->
+<section id="testimonials" class="relative py-24 bg-gradient-to-br from-white via-blue-50/40 to-blue-100/20">
+  <div class="container mx-auto px-6 lg:px-12" data-aos="fade-up">
+
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <div class="inline-block relative">
+        <h2 class="text-4xl font-extrabold mb-3 text-[#213d87]">
+          CLIENT TESTIMONIALS
+        </h2>
+
+        <!-- Curved Underline -->
+        <svg class="absolute left-1/2 -translate-x-1/2 bottom-[-10px] w-52 sm:w-64 md:w-80"
+             viewBox="0 0 250 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 15 C80 5, 170 5, 245 15"
+                stroke="#b64349"
+                stroke-width="5"
+                stroke-linecap="round" />
+        </svg>
+      </div>
+
+      <p class="text-lg text-gray-600 mt-4">
+        Hear from our valued partners and clients:
+      </p>
+    </div>
+
+    <!-- Testimonial Card -->
+    <div class="max-w-5xl mx-auto bg-white shadow-2xl rounded-3xl p-12 flex flex-col md:flex-row items-center gap-12 hover:shadow-[0_10px_30px_rgba(0,0,0,0.15)] transition-all duration-500">
+      
+      <!-- Image -->
+      <div class="flex-shrink-0">
+        <img src="images/testimonials1.png" alt="Client Name"
+             class="w-56 h-56 object-cover rounded-full border-4 border-[#213d87] shadow-lg">
+      </div>
+
+      <!-- Text -->
+      <div class="text-center md:text-left">
+        <p class="text-gray-700 text-lg italic leading-relaxed">
+          “ I have been using Mariushi Pumps for nearly 5 years. Their work and services are exemplary, and I would highly recommend them to anyone.”
+        </p>
+
+        <div class="mt-8">
+          <h4 class="text-2xl font-bold text-[#213d87]">Gloria Marelli</h4>
+          <p class="text-gray-500 text-sm">Project Manager, Argal Pumps - Italy</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+  
+    <!-- Contact Section -->
+    <section id="contact" class="relative py-24 bg-gradient-to-br from-gray-50 via-white to-blue-50/30">
+      <div class="container mx-auto px-6 lg:px-12">
+    
+        <!-- Section Header -->
+        <div class="text-center mb-16">
+          <div class="inline-block relative">
+            <h2 class="text-4xl font-extrabold mb-3 text-[#213d87]">
+              CONTACT US
+            </h2>
+        
+            <!-- Curved Stylish Underline -->
+            <svg class="absolute left-1/2 -translate-x-1/2 bottom-[-10px] w-40 sm:w-52 md:w-64"
+                 viewBox="0 0 220 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 15 C70 5, 150 5, 215 15"
+                    stroke="#b64349"
+                    stroke-width="5"
+                    stroke-linecap="round" />
+            </svg>
+          </div>
+        
+          <p class="text-lg text-gray-600 mt-4">
+            Get in touch with our team
+          </p>
+        </div>
+        
+    
+        <!-- Grid Layout -->
+        <div class="grid lg:grid-cols-2 gap-12">
+    
+          <!-- Left: Contact Details -->
+          <div>
+            <div class="bg-white rounded-2xl shadow-lg p-10 h-full flex flex-col justify-center">
+              <h3 class="text-2xl font-bold text-gray-900 mb-8">Mariushi Pumps Trading LLC</h3>
+    
+              <div class="space-y-8">
+                <!-- Address -->
+                <div class="flex items-start space-x-4">
+                  <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-gray-900 mb-1">Address</h4>
+                    <p class="text-gray-600">Suite No 1501, 15th Floor, City Tower 2</p>
+                    <p class="text-gray-600">Sheikh Zayed Road, Dubai, UAE</p>
+                  </div>
+                </div>
+    
+                <!-- Email -->
+                <div class="flex items-start space-x-4">
+                  <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-gray-900 mb-1">Email</h4>
+                    <a href="mailto:info@mariushipumps.com"
+                      class="text-blue-600 hover:text-blue-800 transition">info@mariushipumps.com</a>
+                  </div>
+                </div>
+    
+                <!-- Phone -->
+                <div class="flex items-start space-x-4">
+                  <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-gray-900 mb-1">Phone</h4>
+                    <a href="tel:+97142563288" class="block text-blue-600 hover:text-blue-800 transition">+971 4 2563288</a>
+                    <a href="tel:+971506564875" class="block text-blue-600 hover:text-blue-800 transition">+971 50 6564875</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Right: Contact Form -->
+          <div>
+            <form class="bg-white rounded-2xl shadow-lg p-10 space-y-6">
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label class="block text-gray-700 font-medium mb-2">Name *</label>
+                  <input type="text" required
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition">
+                </div>
+                <div>
+                  <label class="block text-gray-700 font-medium mb-2">Phone</label>
+                  <input type="tel"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition">
+                </div>
+              </div>
+    
+              <div>
+                <label class="block text-gray-700 font-medium mb-2">Email *</label>
+                <input type="email" required
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition">
+              </div>
+    
+              <div>
+                <label class="block text-gray-700 font-medium mb-2">Subject *</label>
+                <input type="text" required
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition">
+              </div>
+    
+              <div>
+                <label class="block text-gray-700 font-medium mb-2">Message *</label>
+                <textarea rows="5" required
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"></textarea>
+              </div>
+    
+              <!-- Glowing Gradient Button -->
+              <button type="submit"
+                class="w-full bg-[#213d87] text-white py-3 rounded-lg font-semibold shadow-lg hover:shadow-[#213d87]/50 hover:scale-[1.02] transition-all duration-300 ease-in-out">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+<footer 
+  class="relative bg-gray-900 text-white py-12 bg-cover bg-center bg-no-repeat" 
+  style="background-image: url('https://mariushipumps.com/assets/img/slide/slide-3.jpg');"
+>
+  <!-- Dark Overlay -->
+  <div class="absolute inset-0 bg-black/85"></div>
+
+  <div class="relative container mx-auto px-4 lg:px-8">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+          <div>
+              <img src="https://mariushipumps.com/assets/img/mariushi-pumps_logo.png" alt="Mariushi Pumps" class="h-16 mb-4">
+              <h3 class="text-xl font-bold mb-4">MARIUSHI PUMPS</h3>
+              <p class="text-gray-300 mb-4">Dubai, UAE</p>
+              <p class="text-gray-300">📞 +971 4 2563288</p>
+              <p class="text-gray-300">✉️ info@mariushipumps.com</p>
+          </div>
+
+          <div>
+              <h4 class="text-lg font-bold mb-4">Our Services</h4>
+              <ul class="space-y-2 text-gray-300">
+                  <li>Pump Repairs & Overhauling</li>
+                  <li>Annual Maintenance</li>
+                  <li>Site Surveys</li>
+                  <li>Vibration Analysis</li>
+                  <li>24 Hour Callout</li>
+              </ul>
+          </div>
+
+          <div>
+              <h4 class="text-lg font-bold mb-4">Sectors</h4>
+              <ul class="space-y-2 text-gray-300">
+                  <li>Oil & Gas</li>
+                  <li>Petrochemicals</li>
+                  <li>Power</li>
+                  <li>Industrial</li>
+                  <li>Marine</li>
+              </ul>
+          </div>
+
+          <div>
+              <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+              <ul class="space-y-2 text-gray-300">
+                  <li><a href="#home" class="hover:text-white">Home</a></li>
+                  <li><a href="#about" class="hover:text-white">About</a></li>
+                  <li><a href="#services" class="hover:text-white">Services</a></li>
+                  <li><a href="#sectors" class="hover:text-white">Sectors</a></li>
+                  <li><a href="#contact" class="hover:text-white">Contact</a></li>
+              </ul>
+          </div>
+      </div>
+
+      <div class="border-t border-gray-700 pt-8 text-center text-gray-400">
+          <p>&copy; 2025 Mariushi Pumps Trading LLC. All Rights Reserved</p>
+      </div>
+  </div>
+</footer>
+
+
+
+    <script>
+        // Mobile Menu & Carousel Script
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const closeMobileMenu = document.getElementById('closeMobileMenu');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+        mobileMenuBtn.addEventListener('click',()=>mobileMenu.classList.add('active'));
+        closeMobileMenu.addEventListener('click',()=>mobileMenu.classList.remove('active'));
+        mobileNavLinks.forEach(link=>link.addEventListener('click',()=>mobileMenu.classList.remove('active')));
+
+        const slides=document.querySelectorAll('.carousel-slide');
+        let currentSlide=0;
+        function showSlide(i){slides.forEach((s,idx)=>{s.style.opacity=idx===i?'1':'0';});}
+        setInterval(()=>{currentSlide=(currentSlide+1)%slides.length;showSlide(currentSlide);},5000);
+        document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll("section[id]");
+  const navLinks = document.querySelectorAll(".nav-link");
+  const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const closeMobileMenu = document.getElementById('closeMobileMenu');
+
+  mobileMenuBtn.addEventListener('click', () => {
+    mobileMenu.classList.remove('hidden');
+  });
+
+  closeMobileMenu.addEventListener('click', () => {
+    mobileMenu.classList.add('hidden');
+  });
+  
+  // Duplicate row content automatically for seamless infinite scroll
+  document.querySelectorAll('.animate-scroll-left, .animate-scroll-right').forEach(row => {
+    row.innerHTML += row.innerHTML;
+  });
+
+  function activateNavLink() {
+    let scrollY = window.scrollY + 100; // offset to trigger a bit earlier
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.offsetHeight;
+      const sectionId = section.getAttribute("id");
+
+      if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+        navLinks.forEach(link => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === `#${sectionId}`) {
+            link.classList.add("active");
+          }
+        });
+      }
+    });
+  }
+
+  window.addEventListener("scroll", activateNavLink);
+});
+        
+    </script>
+</body>
+</html>
