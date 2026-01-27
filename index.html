@@ -65,6 +65,19 @@
       .delay-900 { animation-delay: 0.9s; }
       .delay-1000 { animation-delay: 1s; }
    
+
+      /* Below CSS is   of core competenct secttion */
+      @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .animate-fade-in-up { animation: fadeInUp 0.8s ease-out forwards; }
+        .stagger-1 { animation-delay: 0.1s; opacity: 0; }
+        .stagger-2 { animation-delay: 0.2s; opacity: 0; }
+        .stagger-3 { animation-delay: 0.3s; opacity: 0; }
+        .stagger-4 { animation-delay: 0.4s; opacity: 0; }
+         /*  of core competenct secttion CSS ends here */
     </style>
 </head>
 <body class="bg-gray-50">
@@ -279,20 +292,37 @@
       </h2>
   
       <p class="text-lg text-gray-700 leading-relaxed mb-4">
-        <span class="font-semibold text-blue-700">Mariushi Pumps</span> is a trusted name in the design, installation, and servicing of advanced pumping systems across the UAE — engineered to deliver maximum efficiency, reliability, and longevity.
+        <span class="font-semibold text-blue-700">Mariushi Pumps</span> is a dynamic UAE-based company leading the way in
+    <strong>Pump Systems & Solutions</strong>. We specialize in the design,
+    supply, installation, servicing, and repair of all types of pumping
+    equipment across the UAE and GCC.
       </p>
   
       <!-- Read More / Read Less (Pure CSS) -->
       <input type="checkbox" id="readmore" class="peer hidden">
       <p class="text-gray-700 leading-relaxed transition-all duration-500 ease-in-out max-h-28 overflow-hidden peer-checked:max-h-[600px]">
-        With decades of expertise, we combine technology with craftsmanship — ensuring each pump system operates flawlessly under demanding conditions.  
-        From diagnostics and preventive maintenance to complete overhauls, our solutions are built to sustain performance and reduce downtime.  
-        We serve industries ranging from oil & gas to water treatment, providing tailored systems that meet the highest international standards.  
+       We are brand-agnostic and support all major global pump manufacturers.
+    Our expertise spans pump repairs, overhauling, commissioning, system
+    optimization, consultancy, AMCs, site surveys, vibration analysis,
+    and laser alignment.We offer a
+comprehensive and specialized service in Supply,
+as well as the delivery of water, wastewater &
+other fluids through our expert installation and
+project management capabilities.
         <br><br>
-        Our philosophy is simple: <span class="font-medium text-blue-700">efficiency through innovation</span>.  
-        Every project we undertake reflects our commitment to quality, sustainability, and customer trust.
+       With operations across UAE, Oman, Saudi Arabia, Qatar, Bahrain, and Kuwait,
+    we are trusted long-term partners for government, utility, industrial, and
+    private sector clients.
+      
+   <br><br>
+       Mariushi Pumps takes pride in offering a
+responsive and agile service, while delivering
+consistently high-quality work supported by
+well-established systems. Simplify your supply
+chain by sourcing your fluid transfer equipment
+products and services from one company -
+Mariushi Pumps.
       </p>
-  
       <label for="readmore" class="mt-4 inline-block cursor-pointer text-blue-700 font-semibold hover:text-blue-900 transition duration-300">
         <span class="peer-checked:hidden">Read More ↓</span>
         <span class="hidden peer-checked:inline">Read Less ↑</span>
@@ -312,126 +342,178 @@
   </style>
 </section>
 
+<!-- Core Competencies Section -->
+<section id="core-competencies" class="relative py-24 bg-gradient-to-br from-white via-blue-50/30 to-blue-100/20 overflow-hidden">
+    <div class="container mx-auto px-6 lg:px-12">
 
+        <!-- Section Header -->
+        <div class="text-center mb-16 animate-fade-in-up">
+            <div class="inline-block relative">
+                <h2 class="text-4xl font-extrabold mb-3 text-[#213d87]">
+                    CORE COMPETENCIES
+                </h2>
+                
+                <!-- Curved Stylish Underline -->
+                <svg class="absolute left-1/2 -translate-x-1/2 bottom-[-8px] w-52 sm:w-64 md:w-80"
+                     viewBox="0 0 250 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 15 C80 5, 170 5, 245 15"
+                          stroke="#b64349"
+                          stroke-width="5"
+                          stroke-linecap="round" />
+                </svg>
+            </div>
+        </div>
+
+        <!-- Intro Text -->
+        <p class="text-lg text-gray-600 text-center max-w-4xl mx-auto leading-relaxed mb-16">
+            With a large customer base in utilities, general industry, construction and manufacturing, we provide specialist pump knowledge, agile and responsive service that is brand agnostic.
+        </p>
+
+        <!-- Main Grid Layout -->
+        <div class="grid lg:grid-cols-2 gap-12 items-start max-w-7xl mx-auto">
+
+            <!-- Left Column: Service Cards -->
+            <div class="space-y-6">
+                
+                <!-- Project Management Card -->
+                <div class="bg-white rounded-2xl shadow-lg p-6 border-l-4 border-[#213d87] transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl animate-fade-in-up stagger-1">
+                    <div class="flex items-start gap-3 mb-3">
+                        <div class="w-10 h-10 bg-gradient-to-br from-[#213d87] to-[#0ea5e9] rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mt-2">PROJECT MANAGEMENT</h3>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Our project teams specialize in the design, construction and commissioning of water and wastewater infrastructure. Working closely with stakeholders, we deliver quality turnkey solutions and ensure our projects are completed efficiently, safely and within budget.
+                    </p>
+                </div>
+
+                <!-- Service Card -->
+                <div class="bg-white rounded-2xl shadow-lg p-6 border-l-4 border-[#0ea5e9] transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl animate-fade-in-up stagger-2">
+                    <div class="flex items-start gap-3 mb-3">
+                        <div class="w-10 h-10 bg-gradient-to-br from-[#0ea5e9] to-[#06b6d4] rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mt-2">SERVICE</h3>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Mariushi Pump service team specializes in the repair and maintenance of pumping and related equipment like pipe lines, panels and VFDs. Our broad range of services include preventative and breakdown maintenance backed by our fully equipped service team and workshop with the latest technology to ensure our clients satisfaction.
+                    </p>
+                </div>
+
+                <!-- Sales Card -->
+                <div class="bg-white rounded-2xl shadow-lg p-6 border-l-4 border-[#b64349] transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl animate-fade-in-up stagger-3">
+                    <div class="flex items-start gap-3 mb-3">
+                        <div class="w-10 h-10 bg-gradient-to-br from-[#b64349] to-[#dc2626] rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mt-2">SALES</h3>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Our customers receive specialized advise and the most suitable equipment for the application that aligns with their needs and budget. Our staff are well trained to provide our customers with tailored solutions based on price, efficiency, value and availability.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Right Column: Capabilities & Images -->
+            <div class="space-y-6">
+                
+                <!-- Key Capabilities -->
+                <div class="bg-gradient-to-br from-[#213d87] to-[#0ea5e9] rounded-2xl shadow-2xl p-6 text-white transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(33,61,135,0.3)] animate-fade-in-up stagger-4">
+                    <h3 class="text-xl font-bold mb-5 flex items-center gap-3">
+                        <div class="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-lg flex items-center justify-center flex-shrink-0">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                            </svg>
+                        </div>
+                        <span class="text-base sm:text-lg">OUR PROJECTS INCORPORATE THE FOLLOWING KEY CAPABILITIES</span>
+                    </h3>
+                    
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-3 pl-6 relative">
+                            <div class="absolute left-0 w-2 h-2 bg-[#b64349] rounded-full shadow-[0_0_0_4px_rgba(182,67,73,0.3)]"></div>
+                            <p class="text-white/95 font-medium text-sm">Project Management</p>
+                        </div>
+                        <div class="flex items-center gap-3 pl-6 relative">
+                            <div class="absolute left-0 w-2 h-2 bg-[#b64349] rounded-full shadow-[0_0_0_4px_rgba(182,67,73,0.3)]"></div>
+                            <p class="text-white/95 font-medium text-sm">Engineering, Drafting and Design</p>
+                        </div>
+                        <div class="flex items-center gap-3 pl-6 relative">
+                            <div class="absolute left-0 w-2 h-2 bg-[#b64349] rounded-full shadow-[0_0_0_4px_rgba(182,67,73,0.3)]"></div>
+                            <p class="text-white/95 font-medium text-sm">Mechanical Works</p>
+                        </div>
+                        <div class="flex items-center gap-3 pl-6 relative">
+                            <div class="absolute left-0 w-2 h-2 bg-[#b64349] rounded-full shadow-[0_0_0_4px_rgba(182,67,73,0.3)]"></div>
+                            <p class="text-white/95 font-medium text-sm">Machining & Fabrication</p>
+                        </div>
+                        <div class="flex items-center gap-3 pl-6 relative">
+                            <div class="absolute left-0 w-2 h-2 bg-[#b64349] rounded-full shadow-[0_0_0_4px_rgba(182,67,73,0.3)]"></div>
+                            <p class="text-white/95 font-medium text-sm">Testing and Commissioning</p>
+                        </div>
+                        <div class="flex items-center gap-3 pl-6 relative">
+                            <div class="absolute left-0 w-2 h-2 bg-[#b64349] rounded-full shadow-[0_0_0_4px_rgba(182,67,73,0.3)]"></div>
+                            <p class="text-white/95 font-medium text-sm">Installation</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image Gallery -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 animate-fade-in-up stagger-4">
+                    <div class="group relative overflow-hidden rounded-2xl aspect-[4/3] transition-all duration-300 hover:scale-105 hover:shadow-xl">
+                        <img src="images/core_comp1.png" alt="Pump Systems" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+                            <p class="text-base font-bold">Pump Systems</p>
+                        </div>
+                    </div>
+                    
+                    <div class="group relative overflow-hidden rounded-2xl aspect-[4/3] transition-all duration-300 hover:scale-105 hover:shadow-xl">
+                        <img src="images/core_comp2.png" alt="Workshop Services" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+                            <p class="text-base font-bold">Workshop Services</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Note -->
+                <div class="bg-white/60 backdrop-blur-sm rounded-xl p-5 border border-gray-200 animate-fade-in-up stagger-4">
+                    <p class="text-gray-700 text-sm leading-relaxed italic">
+                        Our technical expertise allows us to deliver solutions for our customers that are effective, economical and environmentally responsible. We are one of the few companies to offer key capabilities across our dedicated business divisions including Projects, Service and Sales.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
   
-      
-    <!-- Services Section -->
-    <section id="services" class="py-12 bg-gradient-to-br from-blue-50 via-white to-blue-100">
-      <div class="max-w-7xl mx-auto px-6 text-center">
-    
-        <!-- Title -->
-        <div class="text-center mb-12">
-          <div class="inline-block relative">
-            <h2 class="text-4xl font-extrabold mb-3 text-[#213d87]">
-              SERVICES
-            </h2>
-        
-            <!-- Curved Stylish Underline -->
-            <svg class="absolute left-1/2 -translate-x-1/2 bottom-[-8px] w-36 sm:w-44 md:w-56"
-                 viewBox="0 0 200 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5 15 C60 5, 140 5, 195 15"
-                    stroke="#b64349"
-                    stroke-width="5"
-                    stroke-linecap="round" />
-            </svg>
-          </div>
-        </div>
-        
-      
-          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Card 1 -->
-            <div class="p-6 bg-white rounded-2xl shadow-lg border-t-4 border-blue-500 hover:scale-105 transition">
-              <div class="text-5xl mb-4 text-blue-600">🛠️</div>
-              <h3 class="text-xl font-bold text-gray-800 mb-2">Pump Repairs (Onsite & Inhouse)</h3>
-              <p class="text-gray-600 text-sm">Professional repairs ensuring optimal pump performance and reliability.</p>
-            </div>
-      
-            <!-- Card 2 -->
-            <div class="p-6 bg-white rounded-2xl shadow-lg border-t-4 border-green-500 hover:scale-105 transition">
-              <div class="text-5xl mb-4 text-green-600">🧰</div>
-              <h3 class="text-xl font-bold text-gray-800 mb-2">Preventative Maintenance</h3>
-              <p class="text-gray-600 text-sm">Scheduled maintenance to prevent costly breakdowns and extend lifespan.</p>
-            </div>
-      
-            <!-- Card 3 -->
-            <div class="p-6 bg-white rounded-2xl shadow-lg border-t-4 border-yellow-500 hover:scale-105 transition">
-              <div class="text-5xl mb-4 text-yellow-500">⚙️</div>
-              <h3 class="text-xl font-bold text-gray-800 mb-2">Pump Station Upgrades</h3>
-              <p class="text-gray-600 text-sm">Enhance efficiency and modernize your existing pump stations.</p>
-            </div>
-      
-            <!-- Card 4 -->
-            <div class="p-6 bg-white rounded-2xl shadow-lg border-t-4 border-purple-500 hover:scale-105 transition">
-              <div class="text-5xl mb-4 text-purple-600">💧</div>
-              <h3 class="text-xl font-bold text-gray-800 mb-2">Wastewater Plant Service & Repairs</h3>
-              <p class="text-gray-600 text-sm">Reliable servicing for wastewater treatment plant assets and systems.</p>
-            </div>
-      
-            <!-- Card 5 -->
-            <div class="p-6 bg-white rounded-2xl shadow-lg border-t-4 border-pink-500 hover:scale-105 transition">
-              <div class="text-5xl mb-4 text-pink-500">🚰</div>
-              <h3 class="text-xl font-bold text-gray-800 mb-2">Water Treatment Plant Services</h3>
-              <p class="text-gray-600 text-sm">Comprehensive support for water treatment plant assets and repairs.</p>
-            </div>
-      
-            <!-- Card 6 -->
-            <div class="p-6 bg-white rounded-2xl shadow-lg border-t-4 border-red-500 hover:scale-105 transition">
-              <div class="text-5xl mb-4 text-red-600">🔩</div>
-              <h3 class="text-xl font-bold text-gray-800 mb-2">New Pump Installation</h3>
-              <p class="text-gray-600 text-sm">Supply and install high-performance pumps and associated equipment.</p>
-            </div>
-      
-            <!-- Card 7 -->
-            <div class="p-6 bg-white rounded-2xl shadow-lg border-t-4 border-teal-500 hover:scale-105 transition">
-              <div class="text-5xl mb-4 text-teal-600">📋</div>
-              <h3 class="text-xl font-bold text-gray-800 mb-2">Condition Reports</h3>
-              <p class="text-gray-600 text-sm">Detailed reports on pump condition to assist in predictive maintenance.</p>
-            </div>
-      
-            <!-- Card 8 -->
-            <div class="p-6 bg-white rounded-2xl shadow-lg border-t-4 border-indigo-500 hover:scale-105 transition">
-              <div class="text-5xl mb-4 text-indigo-600">🧭</div>
-              <h3 class="text-xl font-bold text-gray-800 mb-2">Condition Monitoring</h3>
-              <p class="text-gray-600 text-sm">Advanced monitoring to detect issues before they cause downtime.</p>
-            </div>
-      
-            <!-- Card 9 -->
-            <div class="p-6 bg-white rounded-2xl shadow-lg border-t-4 border-orange-500 hover:scale-105 transition">
-              <div class="text-5xl mb-4 text-orange-600">🔧</div>
-              <h3 class="text-xl font-bold text-gray-800 mb-2">Breakdown Maintenance/Repairs</h3>
-              <p class="text-gray-600 text-sm">Rapid repair services to minimize disruptions during equipment failure.</p>
-            </div>
-      
-            <!-- Card 10 -->
-            <div class="p-6 bg-white rounded-2xl shadow-lg border-t-4 border-cyan-500 hover:scale-105 transition">
-              <div class="text-5xl mb-4 text-cyan-600">🎯</div>
-              <h3 class="text-xl font-bold text-gray-800 mb-2">Laser Alignments</h3>
-              <p class="text-gray-600 text-sm">Precision laser alignment for maximum efficiency and reduced wear.</p>
-            </div>
-      
-            <!-- Card 11 -->
-            <div class="p-6 bg-white rounded-2xl shadow-lg border-t-4 border-lime-500 hover:scale-105 transition">
-              <div class="text-5xl mb-4 text-lime-600">⚡</div>
-              <h3 class="text-xl font-bold text-gray-800 mb-2">Pump Energy Audits</h3>
-              <p class="text-gray-600 text-sm">Assess and improve energy efficiency to lower operational costs.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+<!-- SECTORS SECTION -->
+<section id="sectors" class="relative py-24 bg-[#213d87] overflow-hidden">
 
-      
-<!-- Sectors Section -->
-<section id="sectors" class="relative py-24 bg-gradient-to-br from-white via-blue-50/40 to-blue-100/20">
-  <div class="container mx-auto px-6 lg:px-12" data-aos="fade-up">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
 
     <!-- Section Header -->
-    <div class="text-center mb-16">
+    <div class="text-center mb-16 animate-fade-in-up">
       <div class="inline-block relative">
-        <h2 class="text-4xl font-extrabold mb-3 text-[#213d87]">
-          INDUSTRY SECTORS
+        <h2 class="text-4xl font-extrabold mb-3 text-white">
+          INDUSTRIES AND SERVICES
         </h2>
-    
-        <!-- Extended Curved Stylish Underline -->
+
+        <!-- Curved Stylish Underline -->
         <svg class="absolute left-1/2 -translate-x-1/2 bottom-[-10px] w-52 sm:w-64 md:w-80"
              viewBox="0 0 250 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M5 15 C80 5, 170 5, 245 15"
@@ -440,118 +522,76 @@
                 stroke-linecap="round" />
         </svg>
       </div>
-    
-      <p class="text-lg text-gray-600 mt-4">
-        The sectors we are specialized in:
-      </p>
     </div>
-    
-    
 
-    <!-- Sector Cards Grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-
-      <!-- Card -->
-      <div class="rounded-2xl overflow-hidden shadow-xl transform hover:-translate-y-2 transition-all duration-500 bg-gradient-to-b from-yellow-50 to-yellow-100 border-b-4 border-yellow-400">
-        <img src="https://mariushipumps.com/assets/img/services-sector/oil-gas.jpg" alt="Oil & Gas" class="w-full h-56 object-cover">
-        <div class="p-6 text-center">
-          <h3 class="text-xl font-bold text-[#213d87] tracking-wide">OIL & GAS</h3>
-        </div>
-      </div>
-
-      <!-- Card -->
-      <div class="rounded-2xl overflow-hidden shadow-xl transform hover:-translate-y-2 transition-all duration-500 bg-gradient-to-b from-pink-50 to-pink-100 border-b-4 border-pink-400">
-        <img src="https://mariushipumps.com/assets/img/services-sector/petrochemicals.jpg" alt="Petrochemicals" class="w-full h-56 object-cover">
-        <div class="p-6 text-center">
-          <h3 class="text-xl font-bold text-[#213d87] tracking-wide">PETROCHEMICALS</h3>
-        </div>
-      </div>
-
-      <!-- Card -->
-      <div class="rounded-2xl overflow-hidden shadow-xl transform hover:-translate-y-2 transition-all duration-500 bg-gradient-to-b from-blue-50 to-blue-100 border-b-4 border-blue-400">
-        <img src="https://mariushipumps.com/assets/img/services-sector/power.jpg" alt="Power" class="w-full h-56 object-cover">
-        <div class="p-6 text-center">
-          <h3 class="text-xl font-bold text-[#213d87] tracking-wide">POWER</h3>
-        </div>
-      </div>
-
-      <!-- Card -->
-      <div class="rounded-2xl overflow-hidden shadow-xl transform hover:-translate-y-2 transition-all duration-500 bg-gradient-to-b from-emerald-50 to-emerald-100 border-b-4 border-emerald-400">
-        <img src="https://mariushipumps.com/assets/img/services-sector/industrial.jpg" alt="Industrial" class="w-full h-56 object-cover">
-        <div class="p-6 text-center">
-          <h3 class="text-xl font-bold text-[#213d87] tracking-wide">INDUSTRIAL</h3>
-        </div>
-      </div>
-
-      <!-- Card -->
-      <div class="rounded-2xl overflow-hidden shadow-xl transform hover:-translate-y-2 transition-all duration-500 bg-gradient-to-b from-purple-50 to-purple-100 border-b-4 border-purple-400">
-        <img src="https://mariushipumps.com/assets/img/services-sector/leisure.jpg" alt="Leisure" class="w-full h-56 object-cover">
-        <div class="p-6 text-center">
-          <h3 class="text-xl font-bold text-[#213d87] tracking-wide">LEISURE</h3>
-        </div>
-      </div>
-
-      <!-- Card -->
-      <div class="rounded-2xl overflow-hidden shadow-xl transform hover:-translate-y-2 transition-all duration-500 bg-gradient-to-b from-red-50 to-red-100 border-b-4 border-red-400">
-        <img src="https://mariushipumps.com/assets/img/services-sector/hotels-hospitality.jpg" alt="Hotel & Hospitality" class="w-full h-56 object-cover">
-        <div class="p-6 text-center">
-          <h3 class="text-xl font-bold text-[#213d87] tracking-wide">HOTEL & HOSPITALITY</h3>
-        </div>
-      </div>
-
-      <!-- Card -->
-      <div class="rounded-2xl overflow-hidden shadow-xl transform hover:-translate-y-2 transition-all duration-500 bg-gradient-to-b from-cyan-50 to-cyan-100 border-b-4 border-cyan-400">
-        <img src="https://mariushipumps.com/assets/img/services-sector/marine.jpg" alt="Marine" class="w-full h-56 object-cover">
-        <div class="p-6 text-center">
-          <h3 class="text-xl font-bold text-[#213d87] tracking-wide">MARINE</h3>
-        </div>
-      </div>
-
-      <!-- Card -->
-      <div class="rounded-2xl overflow-hidden shadow-xl transform hover:-translate-y-2 transition-all duration-500 bg-gradient-to-b from-green-50 to-green-100 border-b-4 border-green-400">
-        <img src="https://mariushipumps.com/assets/img/services-sector/environmental.jpg" alt="Environmental" class="w-full h-56 object-cover">
-        <div class="p-6 text-center">
-          <h3 class="text-xl font-bold text-[#213d87] tracking-wide">ENVIRONMENTAL</h3>
-        </div>
-      </div>
-
-      <!-- Card -->
-      <div class="rounded-2xl overflow-hidden shadow-xl transform hover:-translate-y-2 transition-all duration-500 bg-gradient-to-b from-orange-50 to-orange-100 border-b-4 border-orange-400">
-        <img src="https://mariushipumps.com/assets/img/services-sector/education.jpg" alt="Education" class="w-full h-56 object-cover">
-        <div class="p-6 text-center">
-          <h3 class="text-xl font-bold text-[#213d87] tracking-wide">EDUCATION</h3>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-  
-<!-- CTA Section -->
-<section class="relative py-24 bg-[#213d87] text-center">
-  <div class="container mx-auto px-6 lg:px-12">
-
-    <!-- Soft Glow Accent -->
-    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.12)_0%,rgba(0,0,0,0)_75%)] pointer-events-none"></div>
-
-    <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-6 tracking-tight">
-      Need Emergency Pump Service?
-    </h2>
-
-    <p class="text-lg md:text-xl text-blue-100 mb-10 max-w-2xl mx-auto leading-relaxed">
-      Our expert team is available <span class="font-semibold text-white">24/7</span> for emergency repairs and maintenance.<br>
-      We respond quickly to minimize your system downtime.
+    <!-- Intro Text -->
+    <p class="text-lg text-blue-100 text-center max-w-4xl mx-auto leading-relaxed mb-20">
+      With a large customer base in utilities, general industry, construction and manufacturing,
+      we provide specialist pump knowledge, agile and responsive service that is brand agnostic.
     </p>
 
-    <a href="tel:+971506564875"
-      class="inline-block bg-white text-[#213d87] font-bold text-lg px-10 py-4 rounded-xl shadow-lg hover:bg-blue-50 hover:scale-105 transition-transform duration-300 ease-in-out">
-      📞 Call Now: +971 50 6564875
-    </a>
+    <!-- 3 Column Layout -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
+
+      <!-- Vertical Dividers (Desktop Only) -->
+      <div class="hidden md:block absolute left-1/3 top-0 h-full w-px bg-white/30"></div>
+      <div class="hidden md:block absolute left-2/3 top-0 h-full w-px bg-white/30"></div>
+
+      <!-- SECTORS -->
+      <div class="text-center px-6">
+        <h3 class="text-2xl font-bold mb-6 text-white">SECTORS</h3>
+
+        <p class="text-blue-100 mb-10">
+          Supporting diverse industries with reliable and application-specific
+          pumping solutions across critical sectors.
+        </p>
+
+        <a href="/sectors.html"
+           class="inline-block px-10 py-3 border border-white text-white rounded-md
+                  hover:bg-white hover:text-[#213d87] transition font-semibold">
+          All Sectors
+        </a>
+      </div>
+
+      <!-- SERVICES -->
+      <div class="text-center px-6">
+        <h3 class="text-2xl font-bold mb-6 text-white">SERVICES</h3>
+
+        <p class="text-blue-100 mb-10">
+          Comprehensive pump services covering installation, maintenance,
+          repairs, and performance optimization.
+        </p>
+
+        <a href="/services.html"
+           class="inline-block px-10 py-3 border border-white text-white rounded-md
+                  hover:bg-white hover:text-[#213d87] transition font-semibold">
+          All Services
+        </a>
+      </div>
+
+      <!-- CAPABILITIES -->
+      <div class="text-center px-6">
+        <h3 class="text-2xl font-bold mb-6 text-white">CAPABILITIES</h3>
+
+        <p class="text-blue-100 mb-10">
+          Strong engineering capabilities delivering customized pumping systems
+          and complex project execution.
+        </p>
+
+        <a href="/capabilities.html"
+           class="inline-block px-10 py-3 border border-white text-white rounded-md
+                  hover:bg-white hover:text-[#213d87] transition font-semibold">
+          All Capabilities
+        </a>
+      </div>
+
+    </div>
+
   </div>
 </section>
-<!-- Clients Section -->
+
+
+
 <!-- Clients Section -->
 <section id="clients" class="py-24 bg-gradient-to-br from-white via-gray-50 to-blue-50/30 overflow-hidden">
   <div class="container mx-auto px-6 lg:px-12 text-center" data-aos="fade-up">
@@ -630,6 +670,15 @@
       </div>
 
     </div>
+    <!-- Watermark Text -->
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
+  <p class="text-black/5 text-[3rem] sm:text-[4rem] md:text-[6rem] lg:text-[7rem] 
+            font-extrabold uppercase tracking-widest text-center leading-tight">
+    Your single source for<br>
+    Pump Repairs & Engineering Requirement
+  </p>
+</div>
+
   </div>
 </section>
 
@@ -796,14 +845,35 @@
 }
 </style>
 
+<!-- CTA Section -->
+<section class="relative py-24 bg-[#213d87] text-center">
+  <div class="container mx-auto px-6 lg:px-12">
 
+    <!-- Soft Glow Accent -->
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.12)_0%,rgba(0,0,0,0)_75%)] pointer-events-none"></div>
 
-<!-- testimonials -->
+    <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-6 tracking-tight">
+      Need Emergency Pump Service?
+    </h2>
+
+    <p class="text-lg md:text-xl text-blue-100 mb-10 max-w-2xl mx-auto leading-relaxed">
+      Our expert team is available <span class="font-semibold text-white">24/7</span> for emergency repairs and maintenance.<br>
+      We respond quickly to minimize your system downtime.
+    </p>
+
+    <a href="tel:+971506564875"
+      class="inline-block bg-white text-[#213d87] font-bold text-lg px-10 py-4 rounded-xl shadow-lg hover:bg-blue-50 hover:scale-105 transition-transform duration-300 ease-in-out">
+      📞 Call Now: +971 50 6564875
+    </a>
+  </div>
+</section>
+
+<!-- TESTIMONIALS SECTION -->
 <section id="testimonials" class="relative py-24 bg-gradient-to-br from-white via-blue-50/40 to-blue-100/20">
-  <div class="container mx-auto px-6 lg:px-12" data-aos="fade-up">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12" data-aos="fade-up">
 
     <!-- Section Header -->
-    <div class="text-center mb-16">
+    <div class="text-center mb-20">
       <div class="inline-block relative">
         <h2 class="text-4xl font-extrabold mb-3 text-[#213d87]">
           CLIENT TESTIMONIALS
@@ -819,37 +889,81 @@
         </svg>
       </div>
 
-      <p class="text-lg text-gray-600 mt-4">
-        Hear from our valued partners and clients:
+      <p class="text-lg text-gray-600 mt-6">
+        Hear from our valued partners and clients
       </p>
     </div>
 
-    <!-- Testimonial Card -->
-    <div class="max-w-5xl mx-auto bg-white shadow-2xl rounded-3xl p-12 flex flex-col md:flex-row items-center gap-12 hover:shadow-[0_10px_30px_rgba(0,0,0,0.15)] transition-all duration-500">
-      
-      <!-- Image -->
-      <div class="flex-shrink-0">
-        <img src="images/testimonials1.png" alt="Client Name"
-             class="w-56 h-56 object-cover rounded-full border-4 border-[#213d87] shadow-lg">
-      </div>
+    <!-- TESTIMONIALS GRID -->
+    <div class="relative grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
 
-      <!-- Text -->
-      <div class="text-center md:text-left">
-        <p class="text-gray-700 text-lg italic leading-relaxed">
-          “ I have been using Mariushi Pumps for nearly 5 years. Their work and services are exemplary, and I would highly recommend them to anyone.”
-        </p>
+      <!-- Vertical Divider -->
+      <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-gray-300"></div>
 
-        <div class="mt-8">
-          <h4 class="text-2xl font-bold text-[#213d87]">Gloria Marelli</h4>
-          <p class="text-gray-500 text-sm">Project Manager, Argal Pumps - Italy</p>
+      <!-- TESTIMONIAL 1 -->
+      <div class="relative flex items-center gap-10">
+
+        <!-- Quote Circle -->
+        <div class="relative z-10 w-full max-w-md">
+          <div class="bg-white rounded-full border border-gray-200 p-10 text-center">
+
+            <div class="text-5xl text-[#213d87] font-extrabold mb-4">“</div>
+
+            <p class="text-gray-700 text-lg leading-relaxed">
+              I have been using Mariushi Pumps for nearly 5 years. Their work and services
+              are exemplary, and I would highly recommend them to anyone.
+            </p>
+
+            <div class="mt-8">
+              <h4 class="text-lg font-bold text-[#213d87]">GLORIA MARELLI</h4>
+              <p class="text-gray-400 text-sm">Project Manager</p>
+            </div>
+          </div>
         </div>
+
+        <!-- Dark Blue Circle -->
+        <div class="absolute right-0 w-72 h-72 bg-[#213d87] rounded-full"></div>
+
+        <!-- Image -->
+        <img src="images/testimonials1.png"
+             class="relative z-10 w-52 h-52 object-cover rounded-full grayscale"
+             alt="Client">
       </div>
+
+      <!-- TESTIMONIAL 2 -->
+      <div class="relative flex items-center gap-10">
+
+        <!-- Quote Circle -->
+        <div class="relative z-10 w-full max-w-md">
+          <div class="bg-white rounded-full border border-gray-200 p-10 text-center">
+
+            <div class="text-5xl text-[#213d87] font-extrabold mb-4">“</div>
+
+            <p class="text-gray-700 text-lg leading-relaxed">
+              Mariushi Pumps delivers reliable solutions with exceptional service
+              quality and strong engineering expertise. Highly dependable partner.
+            </p>
+
+            <div class="mt-8">
+              <h4 class="text-lg font-bold text-[#213d87]">TARUN STEELE</h4>
+              <p class="text-gray-400 text-sm">Operations Head</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dark Blue Circle -->
+        <div class="absolute right-0 w-72 h-72 bg-[#213d87] rounded-full"></div>
+
+        <!-- Image -->
+        <img src="images/testimonials1.png"
+             class="relative z-10 w-52 h-52 object-cover rounded-full grayscale"
+             alt="Client">
+      </div>
+
     </div>
+
   </div>
 </section>
-
-
-
 
 
   
