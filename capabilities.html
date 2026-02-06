@@ -1,0 +1,306 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariushi Pumps Trading LLC - Leading Pump Solutions in UAE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+ <style>
+.capabilities-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -12px;
+}
+
+/* ITEMS */
+.capabilities-item {
+  padding: 12px;
+  width: 25%; /* 4 columns desktop */
+  transition: transform 0.4s ease;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .capabilities-item {
+    width: 33.3333%; /* 3 columns */
+  }
+}
+
+/* Small Tablet */
+@media (max-width: 768px) {
+  .capabilities-item {
+    width: 50%; /* 2 columns */
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .capabilities-item {
+    width: 100%; /* 1 column */
+  }
+}
+
+/* CARD CONTENT */
+.capabilities-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.capabilities-item h3 {
+  margin-top: 12px;
+  font-weight: 600;
+  text-align: center;
+  color: #213d87;
+}
+
+/* FILTER BUTTONS */
+.filter-btn {
+  color: #6b7280;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+.filter-btn:hover {
+  color: #213d87;
+}
+.filter-btn.active {
+  color: #213d87;
+  border-color: #213d87;
+}
+.filter-btn {
+  padding: 6px 14px;
+  border-radius: 9999px;
+  color: #6b7280;
+  transition: all 0.3s ease;
+}
+
+
+.filter-btn.active {
+  background-color: #213d87;
+  color: #ffffff;
+}
+</style>
+
+</head>
+  <body> 
+
+
+<!-- capabilities PAGE -->
+<section id="capabilities-page" class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+
+    <!-- HEADING (ABOUT-US STYLE) -->
+    <div class="text-center mb-14">
+      <div class="inline-block relative">
+        <h2 class="text-4xl font-extrabold mb-3 text-[#213d87]">
+          capabilities
+        </h2>
+
+        <!-- Curved Stylish Underline -->
+        <svg class="absolute left-1/2 -translate-x-1/2 bottom-[-8px] w-36 sm:w-44 md:w-56"
+             viewBox="0 0 200 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 15 C60 5, 140 5, 195 15"
+                stroke="#b64349"
+                stroke-width="5"
+                stroke-linecap="round" />
+        </svg>
+      </div>
+
+      <!-- SUBTEXT -->
+      <p class="text-black-600 max-w-3xl mx-auto mt-6">
+        We deliver specialized pumping solutions across a wide range of industries and applications.
+      </p>
+    </div>
+
+    <!-- CATEGORY LABEL -->
+    <p class="text-center text-sm text-gray-500 mb-4">
+      Choose Category
+    </p>
+
+    <!-- FILTER TABS (DESKTOP) -->
+    <div
+      id="capabilities-tabs"
+      class="hidden md:flex flex-wrap justify-center gap-4 mb-12 text-sm font-semibold">
+      
+      <button class="filter-btn active" data-filter="*">ALL</button>
+      <button class="filter-btn" data-filter=".centrifugal">Centrifugal</button>
+      <button class="filter-btn" data-filter=".submersible">Submersible</button>
+      <button class="filter-btn" data-filter=".positive-displacement">Positive Displacement</button>
+      <button class="filter-btn" data-filter=".chemical">Chemical & Process</button>
+      <button class="filter-btn" data-filter=".vacuum">Vacuum Systems</button>
+      <button class="filter-btn" data-filter=".motor-services">Motor & Electrical Services</button>
+      <button class="filter-btn" data-filter=".controls">Valves & Controls</button>
+    </div>
+
+    <!-- FILTER DROPDOWN (MOBILE) -->
+    <div class="md:hidden mb-14 max-w-xs mx-auto">
+      <select
+        id="capabilitiesDropdown"
+        class="w-full border border-gray-300 rounded-md px-4 py-3 text-gray-700">
+        <option value="*">All</option>
+        <option value=".centrifugal">Centrifugal</option>
+        <option value=".submersible">Submersible</option>
+        <option value=".positive-displacement">Positive Displacement</option>
+        <option value=".chemical">Chemical & Process</option>
+        <option value=".vacuum">Vacuum Systems</option>
+        <option value=".motor-services">Motor & Electrical Services</option>
+        <option value=".controls">Valves & Controls</option>
+      </select>
+    </div>
+
+    <!-- GRID -->
+    <div class="capabilities-grid"></div>
+
+  </div>
+</section>
+
+<script>
+
+
+const capabilitiesData = [
+
+  // 🔹 MAINTENANCE
+  {
+    name: "Centrifugal Pumps",
+    category: "centrifugal",
+    icon: "images/Centrifugal_Pumps.jpeg"
+  },
+  {
+    name: "Single Stage Pumps",
+    category: "centrifugal",
+    icon: "images/single stage pumps.jpeg"
+  },
+  {
+    name: "Multi Stage Pumps",
+    category: "centrifugal",
+    icon: "images/multi stage pumps.jpeg"
+  },
+  {
+    name: "Split Case Pumps",
+    category: "centrifugal",
+    icon: "images/split case.jpeg"
+  },
+  {
+    name: "Chilled Water Pumps",
+    category: "centrifugal",
+    icon: "images/chilled wate.jpeg"
+  },
+  {
+    name: "Pool Circulation Pumps",
+    category: "centrifugal",
+    icon: "images/pool circulation.jpeg"
+  },
+
+  // 🔹 SUBMERSIBLE PUMPS
+  {
+    name: "Submersible Pumps",
+    category: "submersible",
+    icon: "images/submersible.jpeg"
+  },
+
+  // 🔹 POSITIVE DISPLACEMENT PUMPS
+  {
+    name: "Gear Pumps",
+    category: "positive-displacement",
+    icon: "images/gear pumps.jpeg"
+  },
+  {
+    name: "Screw Pumps",
+    category: "positive-displacement",
+    icon: "images/screw pumps.jpeg"
+  },
+  {
+    name: "Piston Pumps",
+    category: "positive-displacement",
+    icon: "images/piston and plunger pumps.jpeg"
+  },
+  
+  // 🔹 CHEMICAL & PROCESS
+  {
+    name: "Chemical Dosing Pumps",
+    category: "chemical",
+    icon: "images/chemical dosing.jpeg"
+  },
+
+  // 🔹 VACUUM SYSTEMS
+  {
+    name: "Liquid Ring Vacuum Pumps",
+    category: "vacuum",
+    icon: "images/liquid ring.jpeg"
+  },
+
+  // 🔹 MOTOR & ELECTRICAL SERVICES
+  {
+    name: "Electric Motor Rewinds & Repairs",
+    category: "motor-services",
+    icon: "images/electric motor.jpeg"
+  },
+
+  // 🔹 VALVES & CONTROLS
+  {
+    name: "Valves & Pipeline Work",
+    category: "controls",
+    icon: "images/valves and pipelines.jpeg"
+  },
+  {
+    name: "Panels & VFDs Repair & Installation",
+    category: "controls",
+    icon: "images/panel and vfd.jpeg"
+  }
+];
+
+
+
+// Render cards
+const grid = document.querySelector('.capabilities-grid');
+
+capabilitiesData.forEach(item => {
+  const div = document.createElement('div');
+  div.className = `capabilities-item ${item.category}`;
+  div.innerHTML = `
+    <img src="${item.icon}" alt="${item.name}">
+    <h3>${item.name}</h3>
+  `;
+  grid.appendChild(div);
+});
+
+// Init Isotope
+const iso = new Isotope(grid, {
+  itemSelector: '.capabilities-item',
+  layoutMode: 'fitRows',
+  transitionDuration: '0.6s'
+});
+
+// Desktop tabs
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    const filterValue = btn.dataset.filter;
+    iso.arrange({ filter: filterValue });
+
+    // Sync dropdown
+    document.getElementById('capabilitiesDropdown').value = filterValue;
+  });
+});
+
+// Mobile dropdown
+document.getElementById('capabilitiesDropdown').addEventListener('change', function () {
+  iso.arrange({ filter: this.value });
+
+  // Sync tabs
+  document.querySelectorAll('.filter-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.filter === this.value);
+  });
+});
+</script>
+
+
+</body>
+</html>

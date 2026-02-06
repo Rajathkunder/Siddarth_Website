@@ -1,0 +1,280 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariushi Pumps Trading LLC - Leading Pump Solutions in UAE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+ <style>
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -12px;
+}
+
+/* ITEMS */
+.services-item {
+  padding: 12px;
+  width: 25%; /* 4 columns desktop */
+  transition: transform 0.4s ease;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .services-item {
+    width: 33.3333%; /* 3 columns */
+  }
+}
+
+/* Small Tablet */
+@media (max-width: 768px) {
+  .services-item {
+    width: 50%; /* 2 columns */
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .services-item {
+    width: 100%; /* 1 column */
+  }
+}
+
+/* CARD CONTENT */
+.services-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.services-item h3 {
+  margin-top: 12px;
+  font-weight: 600;
+  text-align: center;
+  color: #213d87;
+}
+
+/* FILTER BUTTONS */
+.filter-btn {
+  color: #6b7280;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+.filter-btn:hover {
+  color: #213d87;
+}
+.filter-btn.active {
+  color: #213d87;
+  border-color: #213d87;
+}
+.filter-btn {
+  padding: 6px 14px;
+  border-radius: 9999px;
+  color: #6b7280;
+  transition: all 0.3s ease;
+}
+
+
+.filter-btn.active {
+  background-color: #213d87;
+  color: #ffffff;
+}
+</style>
+
+</head>
+  <body> 
+
+
+<!-- services PAGE -->
+<section id="services-page" class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+
+    <!-- HEADING (ABOUT-US STYLE) -->
+    <div class="text-center mb-14">
+      <div class="inline-block relative">
+        <h2 class="text-4xl font-extrabold mb-3 text-[#213d87]">
+          SERVICES
+        </h2>
+
+        <!-- Curved Stylish Underline -->
+        <svg class="absolute left-1/2 -translate-x-1/2 bottom-[-8px] w-36 sm:w-44 md:w-56"
+             viewBox="0 0 200 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 15 C60 5, 140 5, 195 15"
+                stroke="#b64349"
+                stroke-width="5"
+                stroke-linecap="round" />
+        </svg>
+      </div>
+
+      <!-- SUBTEXT -->
+      <p class="text-black-600 max-w-3xl mx-auto mt-6">
+        We deliver specialized pumping solutions across a wide range of industries and applications.
+      </p>
+    </div>
+
+    <!-- CATEGORY LABEL -->
+    <p class="text-center text-sm text-gray-500 mb-4">
+      Choose Category
+    </p>
+
+    <!-- FILTER TABS (DESKTOP) -->
+    <div
+      id="services-tabs"
+      class="hidden md:flex flex-wrap justify-center gap-4 mb-12 text-sm font-semibold">
+      
+      <button class="filter-btn active" data-filter="*">ALL</button>
+      <button class="filter-btn" data-filter=".maintenance">Maintenance</button>
+      <button class="filter-btn" data-filter=".assets">Assets</button>
+      <button class="filter-btn" data-filter=".installation">Installation</button>
+      <button class="filter-btn" data-filter=".monitoring">Monitoring</button>
+    </div>
+
+    <!-- FILTER DROPDOWN (MOBILE) -->
+    <div class="md:hidden mb-14 max-w-xs mx-auto">
+      <select
+        id="servicesDropdown"
+        class="w-full border border-gray-300 rounded-md px-4 py-3 text-gray-700">
+        <option value="*">All</option>
+        <option value=".maintenance">Maintenance</option>
+        <option value=".assets">Assets</option>
+        <option value=".installation">Installation</option>
+        <option value=".monitoring">Monitoring</option>
+      </select>
+    </div>
+
+    <!-- GRID -->
+    <div class="services-grid"></div>
+
+  </div>
+</section>
+
+<script>
+
+
+const servicesData = [
+
+  // 🔹 MAINTENANCE
+  {
+    name: "Pump Repairs (Onsite & In-house)",
+    category: "maintenance",
+    icon: "images/pump_repairs.jpeg"
+  },
+  {
+    name: "Breakdown Maintenance & Repairs",
+    category: "maintenance",
+    icon: "images/breakdown_maintainence.jpeg"
+  },
+  {
+    name: "Preventative Maintenance",
+    category: "maintenance",
+    icon: "images/preventive_measures.jpeg"
+  },
+  {
+    name: "Laser Alignments",
+    category: "maintenance",
+    icon: "images/laser_ailments.jpeg"
+  },
+
+  // 🔹 INSTALLATION
+  {
+    name: "Supply & Installation of New Pumps",
+    category: "installation",
+    icon: "images/supply_installation.jpeg"
+  },
+  {
+    name: "Associated Equipment Installation",
+    category: "installation",
+    icon: "images/supply_installation.jpeg"
+  },
+  {
+    name: "Pump Station Upgrades",
+    category: "installation",
+    icon: "images/pump_stations.jpeg"
+  },
+
+  // 🔹 ASSETS
+  {
+    name: "Pump-related Asset Services & Repairs",
+    category: "assets",
+    icon: "images/pump_repairs.jpeg"
+  },
+  {
+    name: "Wastewater Treatment Plant Asset Services",
+    category: "assets",
+    icon: "images/waste_water.jpeg"
+  },
+  {
+    name: "Water Treatment Plant Asset Services",
+    category: "assets",
+    icon: "images/water_treatments.jpeg"
+  },
+
+  // 🔹 MONITORING
+  {
+    name: "Pump Condition Monitoring",
+    category: "monitoring",
+    icon: "images/condition_monitoring.jpeg"
+  },
+  {
+    name: "Pump Condition Reports",
+    category: "monitoring",
+    icon: "images/condition_reports.jpeg"
+  }
+
+];
+
+
+
+// Render cards
+const grid = document.querySelector('.services-grid');
+
+servicesData.forEach(item => {
+  const div = document.createElement('div');
+  div.className = `services-item ${item.category}`;
+  div.innerHTML = `
+    <img src="${item.icon}" alt="${item.name}">
+    <h3>${item.name}</h3>
+  `;
+  grid.appendChild(div);
+});
+
+// Init Isotope
+const iso = new Isotope(grid, {
+  itemSelector: '.services-item',
+  layoutMode: 'fitRows',
+  transitionDuration: '0.6s'
+});
+
+// Desktop tabs
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    const filterValue = btn.dataset.filter;
+    iso.arrange({ filter: filterValue });
+
+    // Sync dropdown
+    document.getElementById('servicesDropdown').value = filterValue;
+  });
+});
+
+// Mobile dropdown
+document.getElementById('servicesDropdown').addEventListener('change', function () {
+  iso.arrange({ filter: this.value });
+
+  // Sync tabs
+  document.querySelectorAll('.filter-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.filter === this.value);
+  });
+});
+</script>
+
+
+</body>
+</html>

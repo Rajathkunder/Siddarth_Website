@@ -1,0 +1,272 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariushi Pumps Trading LLC - Leading Pump Solutions in UAE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+ <style>
+.sector-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -12px;
+}
+
+/* ITEMS */
+.sector-item {
+  padding: 12px;
+  width: 25%; /* 4 columns desktop */
+  transition: transform 0.4s ease;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .sector-item {
+    width: 33.3333%; /* 3 columns */
+  }
+}
+
+/* Small Tablet */
+@media (max-width: 768px) {
+  .sector-item {
+    width: 50%; /* 2 columns */
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .sector-item {
+    width: 100%; /* 1 column */
+  }
+}
+
+/* CARD CONTENT */
+.sector-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.sector-item h3 {
+  margin-top: 12px;
+  font-weight: 600;
+  text-align: center;
+  color: #213d87;
+}
+
+/* FILTER BUTTONS */
+.filter-btn {
+  color: #6b7280;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+.filter-btn:hover {
+  color: #213d87;
+}
+.filter-btn.active {
+  color: #213d87;
+  border-color: #213d87;
+}
+.filter-btn {
+  padding: 6px 14px;
+  border-radius: 9999px;
+  color: #6b7280;
+  transition: all 0.3s ease;
+}
+
+
+.filter-btn.active {
+  background-color: #213d87;
+  color: #ffffff;
+}
+</style>
+
+</head>
+  <body> 
+ <!-- MISSION / VISION / VALUES SECTION -->
+
+<!-- SECTORS PAGE -->
+<section id="sectors-page" class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+
+    <!-- HEADING (ABOUT-US STYLE) -->
+    <div class="text-center mb-14">
+      <div class="inline-block relative">
+        <h2 class="text-4xl font-extrabold mb-3 text-[#213d87]">
+          SECTORS
+        </h2>
+
+        <!-- Curved Stylish Underline -->
+        <svg class="absolute left-1/2 -translate-x-1/2 bottom-[-8px] w-36 sm:w-44 md:w-56"
+             viewBox="0 0 200 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 15 C60 5, 140 5, 195 15"
+                stroke="#b64349"
+                stroke-width="5"
+                stroke-linecap="round" />
+        </svg>
+      </div>
+
+      <!-- SUBTEXT -->
+      <p class="text-black-600 max-w-3xl mx-auto mt-6">
+        We deliver specialized pumping solutions across a wide range of industries and applications.
+      </p>
+    </div>
+
+    <!-- CATEGORY LABEL -->
+    <p class="text-center text-sm text-gray-500 mb-4">
+      Choose Category
+    </p>
+
+    <!-- FILTER TABS (DESKTOP) -->
+    <div
+      id="sector-tabs"
+      class="hidden md:flex flex-wrap justify-center gap-4 mb-12 text-sm font-semibold">
+      
+      <button class="filter-btn active" data-filter="*">ALL</button>
+      <button class="filter-btn" data-filter=".residential">RESIDENTIAL & COMMERCIAL</button>
+      <button class="filter-btn" data-filter=".industrial">INDUSTRIAL & MANUFACTURING</button>
+      <button class="filter-btn" data-filter=".water">WATER & ENVIRONMENT</button>
+      <button class="filter-btn" data-filter=".energy">ENERGY & UTILITIES</button>
+    </div>
+
+    <!-- FILTER DROPDOWN (MOBILE) -->
+    <div class="md:hidden mb-14 max-w-xs mx-auto">
+      <select
+        id="sectorDropdown"
+        class="w-full border border-gray-300 rounded-md px-4 py-3 text-gray-700">
+        <option value="*">All</option>
+        <option value=".residential">Residential & Commercial</option>
+        <option value=".industrial">Industrial & Manufacturing</option>
+        <option value=".water">Water & Environment</option>
+        <option value=".energy">Energy & Utilities</option>
+      </select>
+    </div>
+
+    <!-- GRID -->
+    <div class="sector-grid"></div>
+
+  </div>
+</section>
+
+<script>
+
+
+const sectorsData = [
+{
+    name: "Malls",
+    category: "residential",
+    image: "images/malls.png"
+  },
+  {
+    name: "Houses",
+    category: "residential",
+    image: "images/house.jpg"
+  },
+  {
+    name: "Manufacturing",
+    category: "industrial",
+    image: "images/manufacturing.jpeg"
+  },
+  {
+    name: "Industrial",
+    category: "industrial",
+    image: "images/industrial.jpeg"
+  },
+  {
+    name: "Process & Chemical Engineering",
+    category: "industrial",
+    image: "images/process and chemical.jpeg"
+  },
+  {
+    name: "Food & Beverages",
+    category: "industrial",
+    image: "images/food and beverages.jpeg"
+  },
+  {
+    name: "Water",
+    category: "water",
+    image: "images/water.jpeg"
+  },
+  {
+    name: "Storm Water",
+    category: "water",
+    image: "images/storm water.jpeg"
+  },
+  {
+    name: "Marine Sea Water",
+    category: "water",
+    image: "images/marine water.jpeg"
+  },
+  {
+    name: "Dewatering",
+    category: "water",
+    image: "images/dewatering.jpeg"
+  },
+  {
+    name: "Energy",
+    category: "energy",
+    image: "images/energy.png"
+  },
+  {
+    name: "Oil & Gas",
+    category: "energy",
+    image: "images/oil-gas.jpg"
+  }
+  
+  
+];
+
+
+// Render cards
+const grid = document.querySelector('.sector-grid');
+
+sectorsData.forEach(item => {
+  const div = document.createElement('div');
+  div.className = `sector-item ${item.category}`;
+  div.innerHTML = `
+    <img src="${item.image}" alt="${item.name}">
+    <h3>${item.name}</h3>
+  `;
+  grid.appendChild(div);
+});
+
+// Init Isotope
+const iso = new Isotope(grid, {
+  itemSelector: '.sector-item',
+  layoutMode: 'fitRows',
+  transitionDuration: '0.6s'
+});
+
+// Desktop tabs
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    const filterValue = btn.dataset.filter;
+    iso.arrange({ filter: filterValue });
+
+    // Sync dropdown
+    document.getElementById('sectorDropdown').value = filterValue;
+  });
+});
+
+// Mobile dropdown
+document.getElementById('sectorDropdown').addEventListener('change', function () {
+  iso.arrange({ filter: this.value });
+
+  // Sync tabs
+  document.querySelectorAll('.filter-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.filter === this.value);
+  });
+});
+</script>
+
+
+</body>
+</html>
