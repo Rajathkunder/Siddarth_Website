@@ -132,6 +132,8 @@
       <button class="filter-btn" data-filter=".assets">Assets</button>
       <button class="filter-btn" data-filter=".installation">Installation</button>
       <button class="filter-btn" data-filter=".monitoring">Monitoring</button>
+      <button class="filter-btn" data-filter=".efficiency">Efficiency</button>
+
     </div>
 
     <!-- FILTER DROPDOWN (MOBILE) -->
@@ -144,6 +146,7 @@
         <option value=".assets">Assets</option>
         <option value=".installation">Installation</option>
         <option value=".monitoring">Monitoring</option>
+        <option value=".efficiency">Efficiency</option>
       </select>
     </div>
 
@@ -160,12 +163,12 @@ const servicesData = [
 
   // 🔹 MAINTENANCE
   {
-    name: "Pump Repairs (Onsite & In-house)",
+    name: "Pump Repairs Onsite & In-house",
     category: "maintenance",
     icon: "images/pump_repairs.jpeg"
   },
   {
-    name: "Breakdown Maintenance & Repairs",
+    name: "Breakdown Maintenance/Repairs",
     category: "maintenance",
     icon: "images/breakdown_maintainence.jpeg"
   },
@@ -182,15 +185,11 @@ const servicesData = [
 
   // 🔹 INSTALLATION
   {
-    name: "Supply & Installation of New Pumps",
+    name: "Supply & Installation of New Pumps & Associated Equipment",
     category: "installation",
     icon: "images/supply_installation.jpeg"
   },
-  {
-    name: "Associated Equipment Installation",
-    category: "installation",
-    icon: "images/supply_installation.jpeg"
-  },
+
   {
     name: "Pump Station Upgrades",
     category: "installation",
@@ -198,33 +197,35 @@ const servicesData = [
   },
 
   // 🔹 ASSETS
+ 
   {
-    name: "Pump-related Asset Services & Repairs",
-    category: "assets",
-    icon: "images/pump_repairs.jpeg"
-  },
-  {
-    name: "Wastewater Treatment Plant Asset Services",
+    name: "Wastewater Treatment Plant Assets Service and Repairs",
     category: "assets",
     icon: "images/waste_water.jpeg"
   },
   {
-    name: "Water Treatment Plant Asset Services",
+    name: "Water Treatment Plant Assets Service and Repairs",
     category: "assets",
     icon: "images/water_treatments.jpeg"
   },
 
   // 🔹 MONITORING
   {
-    name: "Pump Condition Monitoring",
+    name: "Condition Monitoring",
     category: "monitoring",
     icon: "images/condition_monitoring.jpeg"
   },
   {
-    name: "Pump Condition Reports",
+    name: "Condition Reports",
     category: "monitoring",
     icon: "images/condition_reports.jpeg"
+  },
+   {
+    name: "Pump Energy Audits",
+    category: "efficiency",
+    icon: "images/pump_repairs.jpeg"
   }
+
 
 ];
 
